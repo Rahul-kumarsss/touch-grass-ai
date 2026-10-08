@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TouchGrass AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌱 TouchGrass AI</h1>
+            <p>Get outside. Explore the real world.</p>
+        </header>
+
+
+        <div class="mission-card">
+
+            <h2>🎯 Create Your Outdoor Mission</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>😊 How are you feeling?</label>
+
+                    <select id="mood">
+                        <option value="stressed">Stressed</option>
+                        <option value="tired">Tired</option>
+                        <option value="happy">Happy</option>
+                        <option value="bored">Bored</option>
+                        <option value="anxious">Anxious</option>
+                        <option value="energetic">Energetic</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label>⏱️ How much time?</label>
+
+                    <select id="time">
+                        <option value="15 minutes">15 minutes</option>
+                        <option value="30 minutes">30 minutes</option>
+                        <option value="45 minutes">45 minutes</option>
+                        <option value="1 hour">1 hour</option>
+                        <option value="2 hours">2 hours</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label>💰 Your budget</label>
+
+                    <select id="budget">
+                        <option value="₹0">₹0</option>
+                        <option value="₹100">₹100</option>
+                        <option value="₹200">₹200</option>
+                        <option value="₹500">₹500</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label>👥 Who are you with?</label>
+
+                    <select id="people">
+                        <option value="alone">Alone</option>
+                        <option value="one friend">One Friend</option>
+                        <option value="friends">Friends</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <button class="generate-btn" onclick="generateMission()">
+                🌱 Generate My Outdoor Mission
+            </button>
+
+        </div>
+
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
